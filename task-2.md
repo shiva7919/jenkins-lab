@@ -17,8 +17,8 @@ This pipeline uses the following GitHub repository as the source:
 
    * Fetches the latest code from GitHub.
 <img width="1920" height="1080" alt="16" src="https://github.com/user-attachments/assets/6c2b42c9-aac1-456e-9f24-53ee714a0594" />
-<img width="1920" height="1080" alt="17" src="https://github.com/user-attachments/assets/0a8a68d3-157b-4352-a620-c6097e37cb06" />
-<img width="1920" height="1080" alt="18" src="https://github.com/user-attachments/assets/8afbcaae-dd67-484d-8a71-60842f611121" />
+<img width="1919" height="1079" alt="9 clone git" src="https://github.com/user-attachments/assets/2422a18e-502d-401e-8110-a765c325ad1b" />
+
 <img width="1919" height="1079" alt="15 clone" src="https://github.com/user-attachments/assets/2b72cd68-9632-4c8d-85ad-c64899d1de03" />
 
 2. **Test Job**
