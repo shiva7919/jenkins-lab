@@ -223,8 +223,28 @@ Manage Jenkins → Nodes → New Node
 <img width="1893" height="883" alt="Jenkins Nodes" src="https://github.com/user-attachments/assets/65578b70-f6ca-42e3-8540-fdcaf8b8832c" />
 
 ---
+## step 9 GitHub Webhook Setup
 
-## 🧩 Step 8: Jenkins Pipeline (Jenkinsfile)
+1. In Jenkins → **New Item → Pipeline**
+<img width="1920" height="1080" alt="59" src="https://github.com/user-attachments/assets/802ca99d-b61a-447a-b3bb-2dd485fe64ed" />
+
+   * Definition: *Pipeline script from SCM*
+   * SCM: *Git*
+   * Repository URL: `https://github.com/you/your-app.git`
+   * Branch: `*/main`
+   * Script path: `Jenkinsfile`
+2. Check **GitHub hook trigger for GITScm polling**.
+3. In your GitHub repo → **Settings → Webhooks → Add webhook**
+
+   * Payload URL: `http://<JENKINS_PUBLIC_IP>:8080/github-webhook/`
+   * Content type: `application/json`
+   * Event: *Push events*
+4. Push a commit — the pipeline runs automatically.
+
+<img width="1920" height="1080" alt="60" src="https://github.com/user-attachments/assets/09b79dde-affc-44b9-93be-9b8fb7e7e067" />
+ 
+
+## 🧩 Step 9: Jenkins Pipeline (Jenkinsfile)
 
 ```groovy
 pipeline {
